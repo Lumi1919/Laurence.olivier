@@ -1,0 +1,147 @@
+    <!doctype html>
+    {% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Laurence Olivier| Cabinet Psychothérapie</title>
+
+    <link rel="shortcut icon" href="{% static 'images/fav.jpg' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fontawsom-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'animate.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/testimonial/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/testimonial/css/owl.theme.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+</head>
+
+<body>
+
+       <!-- ################# Header Starts Here#######################--->
+
+    <header id="menu-jk">
+        <nav  class="">
+            <div class="container">
+                <div class="row nav-ro">
+                   <div class="col-lg-3 col-md-4 col-sm-12">
+                       <img src="/static/images/logo3.jpg" alt="">
+                       <a data-toggle="collapse" data-target="#menu" href="#menu"><i class="fas d-block d-md-none small-menu fa-bars"></i></a>
+                   </div>
+                   <div id="menu" class="col-lg-7 col-md-8 d-none d-md-block no-padding">
+                       <ul>
+                            <li><a href="{% url 'home:accueil' %}">Accueil</a></li>
+                            <li><a href="{% url 'blog:indexblog' %}">blog</a></li>
+                            <li><a href="{% url 'home:galerie' %}">Gallerie</a></li>
+                            <li><a href="{% url 'home:contact' %}">Contact</a></li>
+                        </ul>
+                   </div>
+                   <div class="col-sm-2 d-none d-lg-block">
+                       <a href="{% url 'home:reservation' %}"><button class="btn btn-success">Rerserver une séance</button></a>
+                   </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+       <br>
+     <!--  ************************* Page Title Starts Here ************************** -->
+               <div class="page-nav no-margin row">
+                   <div class="container" back>
+                       <div class="row">
+                           <ul>
+                               <li> <a href="{% url 'home:accueil' %}"><i class="fas fa-home"></i> Accueil</a></li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+       
+         <!-- ######## Page  Title End ####### -->
+         
+        
+
+    <div class="row contact-rooo no-margin">
+        <div class="container">
+            <div class="row">
+                <div style="padding:20px" class="col-sm-6">
+                    <h2 style="font-size:18px">Me contacter</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div style="padding-top:10px;" class="col-sm-3"><label>Nom :</label></div>
+                <div class="col-sm-8"><input type="text" placeholder="Nom" name="name" class="form-control input-sm"></div>
+            </div>
+
+            <div style="margin-top:10px;" class="row">
+                <div style="padding-top:10px;" class="col-sm-3"><label>Email  :</label></div>
+                <div class="col-sm-8"><input type="text" name="name" placeholder="Email" class="form-control input-sm"></div>
+            </div>
+
+            <div style="margin-top:10px;" class="row">
+                <div style="padding-top:10px;" class="col-sm-3"><label>Tel:</label></div>
+                <div class="col-sm-8"><input type="text" name="name" placeholder="Tel" class="form-control input-sm"></div>
+            </div>
+
+            <div style="margin-top:10px;" class="row">
+                <div style="padding-top:10px;" class="col-sm-3"><label>Message:</label></div>
+                <div class="col-sm-8">
+                    <textarea rows="5" placeholder="Message" class="form-control input-sm"></textarea>
+                </div>
+            </div>
+
+            <div style="margin-top:10px;" class="row">
+                <div style="padding-top:10px;" class="col-sm-3"><label></label></div>
+                <div class="col-sm-8"><button class="btn btn-success btn-sm">Envoyer</button></div>
+            </div><br>
+            
+                <div class="col-md-4 col-sm-12 map-img">
+                    <h2>Adresse 1</h2>
+                    <address class="md-margin-bottom-40">
+                        4 Rue du Puech <br>
+                        48000 Badaroux <br>
+                        Tel : 06 08 94 84 20<br>
+                    </address>
+                </div><br>
+
+                <div class="col-md-4 col-sm-12 map-img">
+                    <h2>Adresse 2</h2>
+                    <address class="md-margin-bottom-40">
+                        154, Bd Chasselats <br>
+                        Villeneuve-les-Maguelone <br>
+                        Tel : 06 07 62 34 15 <br>
+                        Email: <a href="mailto:info@anybiz.com" class="">laurenceolivier@gmail.com</a><br>
+                    </address>
+                </div>
+        </div>
+    </div>
+
+
+<div class="plan">
+    <div style="margin-top:0px;" class="row no-margin">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.663139548827!2d3.860636715493757!3d43.53021687912581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6b1017435434f%3A0xe7e48792e7ac1839!2s154%20Boulevard%20des%20Chasselas%2C%2034750%20Villeneuve-l%C3%A8s-Maguelone!5e0!3m2!1sfr!2sfr!4v1624010866429!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>
+
+   	<br>
+<div class="copy">
+    <div class="container">
+        <div class="copyright">
+            <p>2020 &copy; LUMI Web Agency | All Rights Reserved</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</body>
+<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'plugins/scroll-fixed/jquery-scrolltofixed-min.js' %}"></script>
+<script src="{% static 'plugins/slider/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+</html>

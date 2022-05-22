@@ -1,0 +1,88 @@
+    <!doctype html>
+    {% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Laurence Olivier| Cabinet Psychothérapie</title>
+
+    <link rel="shortcut icon" href="{% static 'images/fav.jpg' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fontawsom-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'animate.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/testimonial/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/testimonial/css/owl.theme.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+</head>
+
+<body>
+
+       <!-- ################# Header Starts Here#######################--->
+
+    <header id="menu-jk">
+        <nav  class="">
+            <div class="container">
+                <div class="row nav-ro">
+                   <div class="col-lg-3 col-md-4 col-sm-12">
+                       <img src="/static/images/logo3.jpg" alt="">
+                       <a data-toggle="collapse" data-target="#menu" href="#menu"><i class="fas d-block d-md-none small-menu fa-bars"></i></a>
+                   </div>
+                   <div id="menu" class="col-lg-7 col-md-8 d-none d-md-block no-padding">
+                       <ul>
+                            <li><a href="{% url 'home:accueil' %}">Accueil</a></li>
+                            <li><a href="{% url 'blog:indexblog' %}">blog</a></li>
+                            <li><a href="{% url 'home:galerie' %}">Gallerie</a></li>
+                            <li><a href="{% url 'home:contact' %}">Contact</a></li>
+                        </ul>
+                   </div>
+                   <div class="col-sm-2 d-none d-lg-block">
+                       <a href="{% url 'home:reservation' %}"><button class="btn btn-success">Rerserver une séance</button></a>
+                   </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+       <br>
+     <!--  ************************* Page Title Starts Here ************************** -->
+               <div class="page-nav no-margin row">
+                   <div class="container" back>
+                       <div class="row">
+                           <ul>
+                               <li> <a href="{% url 'home:accueil' %}"><i class="fas fa-home"></i> Accueil</a></li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+
+
+<div class="postblog">
+    <img src="{{post.image.url}}" height="400px">
+       <h3>{{post.title}}</h3>
+            <div class="content"> {{post.body | linebreaksbr}}</div>
+    <br>
+    <p><a href="{% url 'blog:indexblog' %}">Voir tous les post</a></p>
+</div>
+
+
+   	<br>
+<div class="copy">
+    <div class="container">
+        <div class="copyright">
+            <p>2020 &copy; LUMI Web Agency | All Rights Reserved</p>
+        </div>
+
+
+
+
+
+</body>
+<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'plugins/scroll-fixed/jquery-scrolltofixed-min.js' %}"></script>
+<script src="{% static 'plugins/slider/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+</html>

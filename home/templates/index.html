@@ -1,0 +1,356 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Laurence Olivier| Cabinet Psychothérapie</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="shortcut icon" href="{% static 'images/fav.jpg' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fontawsom-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/slider/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/slider/css/owl.theme.default.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+</head>
+
+<body>
+
+    <!-- ################# Header Starts Here#######################--->
+
+    <header id="menu-jk">
+        <nav  class="">
+            <div class="container">
+                <div class="row nav-ro">
+                   <div class="col-lg-3 col-md-4 col-sm-12">
+                       <img src="/static/images/logo3.jpg" alt="">
+                       <a data-toggle="collapse" data-target="#menu" href="#menu"><i class="fas d-block d-md-none small-menu fa-bars"></i></a>
+                   </div>
+                   <div id="menu" class="col-lg-7 col-md-8 d-none d-md-block no-padding">
+                       <ul>
+                            <li><a href="{% url 'home:accueil' %}">Accueil</a></li>
+                            <li><a href="{% url 'blog:indexblog'%}">blog</a></li>
+                            <li><a href="{% url 'home:galerie' %}">Gallerie</a></li>
+                            <li><a href="{% url 'home:contact' %}">Contact</a></li>
+                        </ul>
+                   </div>
+                   <div class="col-sm-2 d-none d-lg-block">
+                       <a href="{% url 'home:reservation' %}"><button class="btn btn-success">Rerserver une séance</button></a>
+                   </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ################# Slider Starts Here#######################--->
+     <div class="slider">
+        <!-- Set up your HTML -->
+        <div class="owl-carousel ">
+            <div class="slider-img">
+                <div class="item">
+                    <div class="slider-img"><img src="/static/images/slider/slider-1.jpg" alt=""></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+                                <div class="slider-captions">
+                                    <h1 class="slider-title">Le stress vous envahit ?</h1>
+                                    <p class="slider-text hidden-xs">La psychothérapie aide à surmonter un large éventail de problèmes psychologiques et émotionnels.</p>
+                                    <a href="#" class="btn btn-success hidden-xs">Les différentes psychothérapies</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slider-img"><img src="/static/images/slider/slider-2.jpg" alt=""></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+                            <div class="slider-captions">
+                                <h1 class="slider-title">Il est temps pour une meilleure aide.</h1>
+                                <p class="slider-text hidden-xs">N'attendez plus, ne subissez plus</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="slider-img"> <img src="/static/images/slider/slider-3.jpg" alt=""></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+                            <div class="slider-captions">
+                                <p class="slider-text hidden-xs">Consulter un excellent moyen de réagir pour une reprise en main.</p>
+                                <a href="#" class="btn btn-success hidden-xs">Les différentes psychothérapies</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+
+
+
+
+    <div class="doctor-message">
+        <div class="inner-lay">
+            <div class="container">
+                <div class="row">
+
+
+                    <div class="col-md-6 col-sm-12 doc-img">
+                        <img  src="/static/images/covcoupe.PNG" alt="">
+                    </div>
+                    <div class="col-md-6 col-sm-12 doc-det">
+                        <h3>OLIVIER Laurence</h3>
+                        <span>Psychothérapeute</span>
+
+                        <p>Psychologue clinicienne, je vous reçois à mon cabinet, sur rendez-vous.
+                Je pratique la psychanalyse, la psychothérapie et l’hypnothérapie afin d’appliquer la méthode la plus adaptée à chaque individu et en adoptant toujours une approche pragmatique.</p>
+                        <p>Tel : 06 07 62 34 15 (MONTPELLIER)</p>
+                        <p>Tel : 06 08 94 84 20 (BADAROUX)</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+      	<!-- ################# Mission Vision Starts Here#######################--->
+
+  	<div class="mosion-vision">
+  	    <div class="container">
+  	        <div class="row">
+  	            <div class="col-lg-4 col-md-12">
+  	                <div class="single-dd">
+  	                    <h4>Formations</h4>
+  	                    <p>
+                        <ul>
+                            <li><i class="fa fa-graduation-cap" aria-hidden="true"></i> Psychologie</li>
+                            <li><i class="fa fa-graduation-cap" aria-hidden="true"></i> Programmation neuro-linguistique </li>
+                            <li><i class="fa fa-graduation-cap" aria-hidden="true"></i> Conduites suicidaires: Identification et prévention</li>
+                            <li><i class="fa fa-graduation-cap" aria-hidden="true"></i> Santé sexuelle</li>
+                            <li><i class="fa fa-graduation-cap" aria-hidden="true"></i> Nettoyage émotionnel (NE MO)</li>
+                            <li><i class="fa fa-graduation-cap" aria-hidden="true"></i> Hypnose Ericksonienne</li>
+                        </ul>
+                        </p>
+
+  	                </div>
+  	            </div>
+  	            <div class="col-lg-4 col-md-12">
+  	                 <div class="single-dd">
+
+  	                    <h4>Prestations</h4>
+  	                    <p>
+                            <ul>
+             			<li><i class="fas fa-user-md"></i> Psychothérapie analytique : 50€</li>
+                                <li><i class="fas fa-user-md"></i> Thérapie de couple : 70€</li>
+                                <li><i class="fas fa-user-md"></i> Hypnose Ericksonienne : 50€</li>
+                                <li><i class="fas fa-user-md"></i> Développement personnel : 50€</li>
+                                <li><i class="fas fa-user-md"></i> Gestion du stress: 50€</li>
+                                <li> Pour adultes, adolescents et enfants</li>
+                            </ul>
+                        </p>
+
+
+  	                </div>
+  	            </div>
+                  	            <div class="col-lg-4 col-md-12">
+  	                 <div class="single-dd">
+  	                    <h4>Pourquoi et quand consulter?</h4>
+  	                    <p>
+                            <ul>
+                                <li>Ici c'est à</li>
+                                <li>Laurence de mettre</li>
+                                <li>Du contenu</li>
+
+                            </ul>
+                        </p>
+
+  	                </div>
+  	            </div>
+  	        </div>
+  	    </div>
+  	</div>
+
+
+    
+    <section class="our-blog container-fluid">
+  		<div class="container">
+  		<div class="session-title row">
+  		    <h2>Différentes raisons de consulter</h2>
+  		</div>
+  			<div class="col-sm-12 blog-cont">
+  				<div class="row no-margin">
+  					<div class="col-lg-4 col-md-6 blog-smk">
+						<div class="blog-single">
+
+								<img src="static/images/Depression.JPG" alt="" height="300">
+
+							<div class="blog-single-det">
+							
+								<h6>Dépression</h6>
+								<p>Le plus gros problème : faire reconnaître au dépressif qu’il peut, et doit, se soigner</p>
+								<a href="blog_single.html">
+									<button class="btn btn-success btn-sm">Plus</button>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 blog-smk">
+						<div class="blog-single">
+
+								<img src="/static/images/Anxieux.JPG" alt="" height="300">
+
+							<div class="blog-single-det">
+								
+								<h6>Anxieté</h6>
+								<p>Les troubles anxieux regroupent un ensemble de troubles provoqués par une anxiété excessive. Ils affectent la santé mentale et doivent donc faire l’objet d’une prise en charge psychologique adaptée.</p>
+								<a href="blog_single.html">
+									<button class="btn btn-success btn-sm">Plus</button>
+								</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-4 col-md-6 blog-smk">
+						<div class="blog-single">
+
+								<img src="/static/images/couplepb.JPG" alt="" height="300">
+
+							<div class="blog-single-det">
+							
+								<h6>Problème de couple</h6>
+								<p>Il peut être très utile d'entamer une thérapie de couple lorsque l'on se sent freiné, empêché par l'autre, quand le couple n'est plus une source de bonheur mais d'appréhension." </p>
+								<a href="blog_single.html">
+									<button class="btn btn-success btn-sm">Plus</button>
+								</a>
+							</div>
+						</div>
+					</div>
+					
+					
+					
+				
+					
+					
+  				</div>
+  			</div>
+  			
+  		</div>
+  	</section>  
+  	
+  	<!-- ################# Doctors Message Starts Here#######################--->
+
+
+
+  	
+ 	<!-- ################# Our Session Starts Here#######################--->  	
+  	
+  	<section class="sesion-type">
+  	    <div class="container">
+             <div class="session-title row">
+  		    <h2>Les types de séances</h2>
+  		</div>
+  	        <div class="row">
+  	            <div class="col-md-4 col-sm-6">
+  	                <div class="single-sess">
+  	                    <img src="/static/images/Indiv.JPG" alt="">
+  	                    <p>Séance individuelle</p>
+  	                </div>
+  	            </div>
+  	            <div class="col-md-4 col-sm-6">
+  	                <div class="single-sess">
+  	                    <img src="/static/images/couple.JPG" alt="">
+  	                    <p>Psychothérapie de couple</p>
+  	                </div>
+  	            </div>
+  	            <div class="col-md-4 col-sm-6">
+  	                <div class="single-sess">
+  	                    <img src="/static/images/Enligne.JPG" alt="">
+  	                    <p>Consultation en ligne</p>
+  	                </div>
+  	            </div>
+
+  	            <div class="col-md-4 col-sm-6">
+  	                <div class="single-sess sess-ok">
+  	                   <h4>Débutez vos séances</h4>
+                        <img src="/static/images/Premierpas.jpg" height="200" alt="">
+  	                    <p>Faites le premier pas vers le bien-être. </p>
+                        <a href="{% url 'home:reservation' %}"><button class="btn btn-success">Réservez votre séance</button></a>
+  	                </div>
+  	            </div>
+  	        </div>
+  	    </div>
+  	</section>
+  	
+  	<!-- ################# Testimonial Starts Here#######################--->
+    
+
+      <!-- ################# Footer Starts Here#######################--->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-12 map-img">
+                    <h2>Montpellier</h2>
+                    <address class="md-margin-bottom-40">
+                        15 Avenue du Professeur Graset  <br>
+                        34090 <br>
+                        Montpellier <br>
+                        Tel: 06 07 62 34 15 <br><br>
+
+                    </address>
+
+                    </div>
+                    <div class="col-md-4 col-sm-12 map-img">
+                    <h2>Adresse Badaroux</h2>
+                    <address class="md-margin-bottom-40">
+                        4 Rue du Puech <br>
+                        48000 <br>
+                        Badaroux<br>
+                        Tel: 06 08 94 84 20 <br><br>
+                        Email: <a href="mailto:info@anybiz.com" class="">laurence.olivier1018@gmail.com</a>
+
+                    </address>
+
+                </div>
+
+                <div class="col-md-4 col-sm-12 map-img">
+                    <h2>Réseaux sociaux</h2>
+                       <p><a href="https://www.instagram.com/laurenceolivier_psy"><i class="fab fa-instagram"> Instagram</i></a></p><br>
+                        <p><a href="https://www.facebook.com/laurence.balestri.9"><i class="fab fa-facebook-f"> Facebook</i></a></p><br>
+
+                </div>
+            </div>
+        </div>
+        
+
+    </footer>
+    <div class="copy">
+            <div class="container">
+                <div class="copyright">
+                    <p>2020 &copy; LUMI Web Agency | All Rights Reserved</p>
+                </div>
+            </div>
+    </div>
+    
+    </body>
+
+<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'plugins/scroll-fixed/jquery-scrolltofixed-min.js' %}"></script>
+<script src="{% static 'plugins/slider/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+
+</html>
