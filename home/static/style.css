@@ -10,10 +10,10 @@ Description: This Template is created for web template
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Marck+Script&display=swap');
 @font-face {
   font-family: 'mouse-300';
-  src: url("/static/fonts/PT_Sans-Web-Regular.ttf") format("truetype"); }
+  src: url("static/fonts/PT_Sans-Web-Regular.ttf") format("truetype"); }
 @font-face {
   font-family: 'mouse-500';
-  src: url("/static/fonts/PT_Sans-Web-Bold.ttf") format("truetype"); }
+  src: url("static/fonts/PT_Sans-Web-Bold.ttf") format("truetype"); }
 /* ===================================== Basic CSS ================================== */
 
 .col-lg-3 p{
@@ -530,7 +530,7 @@ header {
 
 /* ===================================== Fooer CSS ================================== */
 .footer {
-  background-image: url("/static/images/footer2.JPG");
+  background-image: url("/static/images/galet.jpg");
   background-size: cover;
   padding-bottom: 0px;
 }
@@ -543,17 +543,17 @@ header {
   .footer p {
     text-align: justify;
     text-indent: 20px;
-    color: white;
+    color: maroon;
     font-weight: bold;
   }
     .footer address{
-    color: white;
+    color: black;
   }
   .footer .link-list li {
     padding: 10px;
     border-bottom: 1px solid #6C6C6C; }
     .footer .link-list li a {
-      color: #FFF; }
+      color: maroon; }
     .footer .link-list li i {
       float: right; }
   .footer .map-img {
@@ -757,10 +757,13 @@ header {
 
 @media screen and (max-width: 480px){
   .footer{
-    background-image: url("/static/images/galet.jpg");
+    background-image: url("/static/images/galet4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 0;
+  }
+  address{
+    color: black;
   }
 }
 
@@ -772,4 +775,25 @@ header {
 .sesion-type .col-md-4 .single-sess:last-child{
   padding-top: 5px;
   padding-bottom: 10px;
+}
+
+address{
+  color: white;
+}
+
+.col-lg-3 img{
+  width: 100px;
+}
+
+.col-md-4 a{
+  color: white;
+}
+.col-md-4 h2{
+  color: maroon;
+}
+
+@media screen and (max-width: 480px) {
+  .col-md-4 a {
+    color: maroon;
+  }
 }
